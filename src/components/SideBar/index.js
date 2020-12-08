@@ -1,7 +1,8 @@
 import './styles.css';
 
 import {
-  HeatMapOutlined
+    GiftOutlined,
+    UserOutlined
 } from '@ant-design/icons';
 
 import { Menu } from 'antd';
@@ -12,9 +13,13 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <Menu>
-        <Menu.Item key="0" icon={<HeatMapOutlined />}>
-          <Link to="/">SimpleMap</Link>
-        </Menu.Item>
+          <Menu.Item key="0" icon={<UserOutlined />}>
+              <Link to="/login">Log In</Link>
+          </Menu.Item>
+
+          <Menu.Item key="1" icon={<GiftOutlined />}>
+              <Link to="/participants">Participants</Link>
+          </Menu.Item>
       </Menu>
     </div>
   );
