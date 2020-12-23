@@ -1,3 +1,35 @@
-.background {
+.title{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3.8rem;
+    color: darkgreen;
+}
 
+.basic{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.contentLogin {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin-left: 20px;
+    margin-right: 20px;
 }

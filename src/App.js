@@ -1,20 +1,21 @@
 import 'antd/dist/antd.css';
 import './App.css';
-import LoginPage from './components/LoginPage';
+import Login from './components/LoginPage';
 import SideBar from './components/SideBar';
 
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ParticipantPage from "./components/ParticipantPage";
+import Participant from "./components/ParticipantPage";
+import Wishlist from "./components/WishlistPage";
 
 export default function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route component={SideBar} />
         <Switch>
-          <Route path="/login" component={LoginPage} />
-          <Route path="/participants" component={ParticipantPage} />
+          <Route path="/participants" component={Participant} />
+            <Route path="/wishlist" component={Wishlist} />
+          <Route path="/" component={Login} />
         </Switch>
       </BrowserRouter>
     </div>
