@@ -7,6 +7,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Participant from "./components/ParticipantPage";
 import Wishlist from "./components/WishlistPage";
+import Rules from "./components/RulesPage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Switch>
           <Route path="/participants" component={Participant} />
             <Route path="/wishlist" component={Wishlist} />
+            <Route path="/rules" component={Rules} />
           <Route path="/" component={Login} />
         </Switch>
       </BrowserRouter>

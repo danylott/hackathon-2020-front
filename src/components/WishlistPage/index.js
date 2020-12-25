@@ -84,11 +84,11 @@ export default function Wishlist() {
   return (
       <div className={'background'}>
         <div className={'background-image'}/>
-        <div className={'content'}>
+        <div className={'contentWishlist'}>
             <Title level={2} style={{color:"whitesmoke"}}>Вишлист</Title>
             <Form
                 {...layout}
-                className="basic"
+                className="basicWishlist"
                 initialValues={{ remember: true }}
                 onFinish={addWishClicked}
                 onFinishFailed={err => console.log(err)}
@@ -110,11 +110,15 @@ export default function Wishlist() {
 
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit" style={{ background: "red", borderColor: "red" }}>
-                        Бадумц
+                        Добавить
                     </Button>
                 </Form.Item>
             </Form>
-            <Table pagination={false} columns={columns} dataSource={wishlist} />
+            <Table  className="table" pagination={false} columns={columns} dataSource={wishlist} />
+            <Button type="primary" htmlType="submit" style={{ background: "red", borderColor: "red" }}
+                    onClick={ () => history.push('/rules')}>
+                Узнать имя счастливчика!
+            </Button>
         </div>
       </div>
   );

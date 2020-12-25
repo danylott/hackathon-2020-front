@@ -5,6 +5,7 @@ import 'antd/dist/antd.css';
 import {List, Typography, Divider, Button} from 'antd';
 import * as axios from "axios";
 import {useHistory} from "react-router-dom";
+import WishlistBtn from "../WishlistButton";
 
 export default function Participant() {
     const history = useHistory();
@@ -34,6 +35,7 @@ export default function Participant() {
           onClick={ () => history.push('/wishlist')}>
             Бадумц
           </Button>
+            <WishlistBtn/>
         </div>
       </div>
   );
